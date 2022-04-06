@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form (ngSubmit)="insertPaiementeffectue()">
+        <br/>
+        <div class="form-group">
+            <label for="name">Inserez votre numeros de commmande</label>
+            <input type="text" name="name" class="form-control" [(ngModel)]="paiementeffectue.numcmd">
+        </div><br/>
+    
+        <div class="form-group">
+            <label for="surname">Inserez le nuemros de transaction
+                                 fournit par orange money</label>
+            <input type="text" name="surname" class="form-control" [(ngModel)]="paiementeffectue.idpaiement">
+        </div><br/>
+    
+        <div class="form-group">
+            <label for="adressemail">Inserez le nom d'utlisateur Orange Money</label>
+            <input type="email" name="adressemail" class="form-control" [(ngModel)]="paiementeffectue.pseudoorangemoney">
+        </div><br/>
+    
+        <div class="form-group">
+            <label for="telephone">Inserez le numeros de telephone avec lequel vous avez effectué le paiement</label>
+            <input type="number" name="telephone" class="form-control" [(ngModel)]="paiementeffectue.numorangemoney"
+             placeholder="Sous le format XXXXXXXX sans espace"> 
+        </div><br/>
+    
+        <div style="text-align: center;"><button class='btn btn-info'>Je confirme mon paiement</button><br/></div>
+        
+    </form>
+    <br/><br/>
+    <a href="bienvenuecomponentpath" class="btn btn-dark">Retour à l'acceuil</a>
+</body>
+</html>

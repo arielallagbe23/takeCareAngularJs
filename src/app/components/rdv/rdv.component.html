@@ -1,0 +1,39 @@
+
+
+<body> 
+<h4 style="text-align: center;">En remplissant ce formulaire vous pourrez prendre rendez-vous </h4>    
+
+<form (ngSubmit)="insertData1()">
+    <br/>
+    <div class="form-group">
+        <label for="name">Inserez votre nom</label>
+        <input type="text" name="name" class="form-control" [(ngModel)]="rdv.name">
+    </div><br/>
+
+    <div class="form-group">
+        <label for="surname">Inserez votre prénom</label>
+        <input type="text" name="surname" class="form-control" [(ngModel)]="rdv.surname">
+    </div><br/>
+
+    <div class="form-group">
+        <label for="adressemail">Inserez votre adresse mail</label>
+        <input type="email" name="adressemail" class="form-control" [(ngModel)]="rdv.adressemail">
+    </div><br/>
+
+    <div class="form-group">
+        <label for="telephone">Inserez votre numeros de telephone</label>
+        <input type="number" name="telephone" class="form-control" placeholder="Mettez sous le format XXXXXXXX s'il vous plait" [(ngModel)]="rdv.telephone">
+    </div><br/>
+
+    <div class="form-group">
+        <label for="name">Expliquez nous en quoi pouvons nous vous aider ?</label><br/>
+        <textarea  name="contenu" lass="form-control" [(ngModel)]="rdv.contenu"
+        rows="20" cols="53"></textarea>                                
+    </div><br/>
+
+    <div style="text-align: center;"><button class='btn btn-dark btn-sn mt-4'>Je prends rendez-vous !</button></div>
+</form>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+
+
